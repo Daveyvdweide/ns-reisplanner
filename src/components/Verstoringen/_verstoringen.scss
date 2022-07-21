@@ -1,0 +1,46 @@
+@import "../../styles/variables";
+
+.verstoringen {
+  height: calc(100% - 100px);
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  padding: 0 $margin--sides;
+
+  h2 {
+    grid-column: 1 / 2;
+    font-family: $font--poppins;
+    font-weight: $font-weight--bold;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: $clr--blue;
+  }
+}
+
+.verstoringen--container {
+  grid-column: 1 / 2;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.verstoringen--container::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .verstoringen {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .verstoringen--hide-title {
+    display: none;
+  }
+
+  .verstoringbutton--invisible {
+    display: none;
+  }
+}

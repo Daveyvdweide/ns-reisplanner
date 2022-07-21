@@ -1,0 +1,29 @@
+@import "../../styles/variables";
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 100vw;
+  z-index: -1;
+}
+
+.background-train {
+  position: absolute;
+  bottom: 0;
+  width: 600px;
+  animation: moving-train 8s infinite linear;
+  img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1920px) {
+  .background {
+    background-size: 1920px; /* Force the image to its minimum width */
+  }
+}

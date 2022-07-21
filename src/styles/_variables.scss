@@ -1,0 +1,31 @@
+$clr--white: #ffffff;
+$clr--offwhite: #f1f1f1;
+$clr--grey-light: #eeeeee;
+$clr--grey-dark: #e0e0e0;
+$clr--yellow: #f6dd20;
+$clr--yellow-dark: #f1d119;
+$clr--blue: #003183;
+$clr--blue-dark: #00276b;
+
+$margin--sides: 3rem;
+
+$border-radius: 1rem;
+
+$font--poppins: "Poppins", sans-serif;
+
+$font-weight--regular: 400;
+$font-weight--medium: 500;
+$font-weight--bold: 700;
+
+$transition--standaard: all 0.2s ease-out;
+$box-shadow: 5px 6px 15px -2px rgba(0, 0, 0, 0.2);
+
+@keyframes moving-train {
+  0% {
+    left: -700px;
+  }
+
+  100% {
+    left: calc(100vw + 900px);
+  }
+}

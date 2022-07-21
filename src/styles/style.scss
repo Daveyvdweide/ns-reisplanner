@@ -1,0 +1,56 @@
+@import "./variables";
+@import "../components/Navbar/navbar";
+@import "../components/Startpagina/startpagina";
+@import "../components/Input/input";
+@import "../components/Background/background";
+@import "../components/Verstoring/verstoring";
+@import "../components/Verstoringen/verstoringen";
+@import "../components/VerstoringView/verstoringview";
+@import "../components/NavSlideout/navslideout";
+@import "../components/Reizen/reizen";
+@import "../components/Reis/reis";
+@import "../components/ReisView/reisview";
+@import "../components/StationMap/stationmap";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  background-image: linear-gradient(to right,
+      #fff630,
+      #fbea28,
+      #f6dd20,
+      #f1d119,
+      #ebc512);
+  overflow-x: hidden;
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  z-index: -2;
+}
+
+.API-message {
+  font-family: $font--poppins;
+  font-size: 1rem;
+  position: absolute;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  max-width: calc(1000vw - 2 * 1rem);
+}
+
+.nav-margin {
+  margin-top: calc(100px + 1rem);
+}
+
+.error {
+  color: red;
+}
+
+.error--no-margin {
+  margin-left: 0rem;
+  margin-top: 0rem;
+  position: relative;
+}

@@ -1,0 +1,129 @@
+@import "../../styles/variables";
+
+.form {
+  background-color: $clr--white;
+  box-shadow: 5px 6px 15px -2px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-areas:
+    "from from"
+    "to to"
+    "date time"
+    "vertrek aankomst"
+    "submit submit";
+  gap: 1rem;
+  max-width: 450px;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+.form>* {
+  height: 40px;
+  border-radius: $border-radius;
+  border: none;
+}
+
+.form--fromstation {
+  grid-area: from;
+  padding: 1.5rem 1rem;
+  width: 100%;
+  font-size: 1rem;
+  font-family: $font--poppins;
+  font-weight: 500;
+  background-color: $clr--grey-light;
+}
+
+.form--tostation {
+  grid-area: to;
+  width: 100%;
+  padding: 1.5rem 1rem;
+  font-size: 1rem;
+  font-family: $font--poppins;
+  font-weight: 500;
+  background-color: $clr--grey-light;
+}
+
+.form--date {
+  grid-area: date;
+}
+
+.form--time {
+  grid-area: time;
+}
+
+.form--arrive-button,
+.form--depart-button {
+  cursor: pointer;
+  transition: $transition--standaard;
+  font-family: $font--poppins;
+  background-color: $clr--grey-light;
+
+  &:hover {
+    background-color: $clr--grey-dark;
+  }
+}
+
+.form--arrive-button {
+  grid-area: aankomst;
+  margin-top: 1rem;
+}
+
+.form--depart-button {
+  grid-area: vertrek;
+  margin-top: 1rem;
+}
+
+.form--submit-button {
+  grid-area: submit;
+  height: 50px;
+  font-size: 1rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 0em 1em;
+  background-color: $clr--yellow;
+  transition: $transition--standaard;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    font-family: $font--poppins;
+    font-size: 1rem;
+    margin-right: 2rem;
+    line-height: 1rem;
+    font-weight: 500;
+  }
+
+  svg {
+    max-height: 1rem;
+    transition: $transition--standaard;
+  }
+
+  &:hover svg {
+    transform: scale(1.5);
+    margin-left: 0.5rem;
+  }
+
+  &:hover {
+    background-color: $clr--yellow-dark;
+  }
+}
+
+.input--active {
+  background-color: $clr--blue;
+  color: #ffffff;
+
+  &:hover {
+    background-color: $clr--blue-dark;
+  }
+}
+
+#toStationFilter {
+  background-color: red;
+}
+
+@media (max-height: 630px) {
+  .form {
+    margin-top: auto;
+  }
+}

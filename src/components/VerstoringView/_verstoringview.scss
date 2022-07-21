@@ -1,0 +1,151 @@
+@import "../../styles/variables";
+
+.verstoringview {
+  min-height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-column: 2 / 3;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  border-radius: $border-radius;
+  background-color: $clr--white;
+  padding: 2rem;
+  box-shadow: $box-shadow;
+  font-family: $font--poppins;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.verstoringview::-webkit-scrollbar {
+  display: none;
+}
+
+.verstoringview--header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+
+  h2 {
+    margin-top: 0px;
+    line-height: 1.2em;
+    margin-bottom: 0em;
+  }
+
+  svg {
+    height: 30px;
+    width: 30px;
+    min-width: 30px;
+    margin-left: 1.5rem;
+  }
+}
+
+.verstoringview--calamity {
+  h2 {
+    margin-top: 0px;
+    line-height: 1.2em;
+    margin-bottom: 0em;
+  }
+}
+
+.verstoringview--item {
+  margin-top: 1rem;
+  background-color: $clr--grey-light;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+
+  h3 {
+    font-weight: $font-weight--medium;
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+.verstoringview--calamity {
+  h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    border: none;
+    padding: 0.75em 1.5em;
+    font-size: 0.9rem;
+    font-family: $font--poppins;
+    font-weight: $font-weight--bold;
+    margin-top: 1rem;
+    background-color: $clr--white;
+    color: $clr--blue;
+    border: 3px solid $clr--blue-dark;
+    border-radius: 0.5rem;
+    transition: $transition--standaard;
+    cursor: pointer;
+
+    &:hover {
+      color: $clr--white;
+      background-color: $clr--blue;
+    }
+  }
+}
+
+.verstoringen--button {
+  display: none;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 850px) {
+  .verstoringview {
+    grid-column: 1 / 2;
+    margin-left: 0rem;
+    margin-bottom: 0rem;
+    flex: 1 1 auto;
+    border-radius: 0;
+    justify-content: flex-start;
+    box-shadow: none;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 100px);
+    padding: $margin--sides;
+    padding-top: 0px;
+  }
+
+  .verstoringpage--invisible {
+    display: none;
+  }
+
+  .verstoringen--button {
+    display: block;
+    align-self: flex-start;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    color: $clr--blue;
+    font-family: $font--poppins;
+    cursor: pointer;
+    transition: $transition--standaard;
+    margin-top: 1rem;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .verstoringview--content {
+    margin-top: auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .verstoringview--item {
+    grid-template-columns: 1fr;
+  }
+}

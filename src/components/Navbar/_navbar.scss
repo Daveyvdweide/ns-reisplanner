@@ -1,0 +1,120 @@
+@import "../../styles/variables";
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  z-index: 5;
+  background-color: $clr--white;
+  padding: 0 $margin--sides;
+  box-shadow: 5px 6px 15px -2px rgba(0, 0, 0, 0.2);
+  position: fixed;
+}
+
+.nav--logo {
+  height: 30px;
+}
+
+.nav--right-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  margin-right: 1rem;
+}
+
+.nav--left-container {
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+    font-weight: $font-weight--bold;
+    font-family: $font--poppins;
+    font-size: 1.1rem;
+    padding: 1em 1.5em;
+    transition: all 0.15s ease-out;
+    cursor: pointer;
+
+    &:hover {
+      color: $clr--yellow-dark;
+    }
+  }
+}
+
+.nav--logoText {
+  font-family: $font--poppins;
+  font-weight: 700;
+  font-size: 1rem;
+  color: $clr--blue;
+}
+
+.nav-hamburger-a {
+  display: none;
+  cursor: pointer;
+
+  &:hover .nav-hamburger span {
+    background-color: $clr--yellow-dark;
+  }
+}
+
+.nav-hamburger {
+  width: min-content;
+}
+
+.nav-hamburger span {
+  display: block;
+  height: 4px;
+  background-color: $clr--blue;
+  border-radius: 2px;
+  transition: all 0.1s ease-out;
+
+  &:first-of-type {
+    width: 31px;
+    margin-bottom: 5px;
+  }
+
+  &:last-of-type {
+    width: 38px;
+  }
+}
+
+.nav--selected {
+  color: $clr--yellow-dark;
+}
+
+
+.active-link {
+  color: $clr--yellow-dark;
+}
+
+.link {
+  color: $clr--blue;
+}
+
+
+@media screen and (max-width: 850px) {
+  nav li {
+    display: none;
+  }
+
+  .nav-hamburger-a {
+    display: block;
+  }
+
+  .nav--left-container {
+    a {
+      padding: 1em 0em;
+    }
+  }
+}
