@@ -24,9 +24,7 @@
         "_variables.scss",
         "../components/Journey/Card/_card.scss",
         "_variables.scss",
-        "../components/Journey/Detail/_detail.scss",
-        "_variables.scss",
-        "../components/StationMap/_stationmap.scss"
+        "../components/Journey/Detail/_detail.scss"
     ],
     "names": [],
     "file": "style.css"

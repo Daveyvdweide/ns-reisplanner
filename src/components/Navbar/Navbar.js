@@ -47,15 +47,6 @@ function Navbar() {
                 Verstoringen
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                to="/stations"
-                className={({ isActive }) =>
-                  (isActive ? "nav--selected" : "link")}
-              >
-                Stations
-              </NavLink>
-            </li>
           </ul>
         </div>
 

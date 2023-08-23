@@ -8,7 +8,6 @@ import Navbar from "./components/Navbar/Navbar";
 import Startpagina from "./components/Startpagina/Startpagina";
 import Background from "./components/Background/Background";
 import Overview from './components/Disruption/Overview/Overview';
-import StationMap from "./components/StationMap/StationMap";
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Startpagina />} />
           <Route path="/verstoringen" element={<Overview />} />
-          <Route path="/stations" element={<StationMap />} />
         </Routes>
         <Background />
       </BrowserRouter>
