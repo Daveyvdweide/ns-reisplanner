@@ -1,4 +1,4 @@
-function ReisView(props) {
+function Detail(props) {
   const lastLegIndex = props.legs.length - 1;
   const lastStopIndex = props.legs[lastLegIndex].stops.length - 1;
 
@@ -157,4 +157,4 @@ function ReisView(props) {
   );
 }
 
-export default ReisView;
+export default Detail;

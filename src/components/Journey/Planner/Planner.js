@@ -5,7 +5,7 @@ import DatePicker from '@mui/lab/DatePicker';
 import TextField from '@mui/material/TextField';
 import DesktopTimePicker from '@mui/lab/DesktopTimePicker';
 
-function Input(props) {
+function Planner(props) {
 
     const handleChangeDateTime = (newValue) => {
         props.changeInputFormData({
@@ -100,4 +100,4 @@ function Input(props) {
     )
 }
 
-export default Input;
+export default Planner;

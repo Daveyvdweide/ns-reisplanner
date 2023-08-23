@@ -1,7 +1,7 @@
-import Reis from "../Reis/Reis";
+import Card from "../Card/Card";
 import { useEffect, useState } from "react";
 
-function Reizen(props) {
+function Overview(props) {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -11,7 +11,7 @@ function Reizen(props) {
     fetch(url, {
       method: "GET",
       headers: {
-        "Ocp-Apim-Subscription-Key": "830049eb60c84c958c9692a2f9a8ba67",
+        "Ocp-Apim-Subscription-Key": process.env.REACT_APP_NS_API_KEY,
         Accept: "application/json",
       },
     })
@@ -39,7 +39,7 @@ function Reizen(props) {
       <div className="reizen">
         <div className="reizen--container">
           {(props.trips !== undefined ? props.trips.map((trip, id) => (
-            <Reis
+            <Card
               key={id}
               id={id}
               legs={trip.legs}
@@ -56,4 +56,4 @@ function Reizen(props) {
   }
 }
 
-export default Reizen;
+export default Overview;

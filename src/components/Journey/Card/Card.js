@@ -1,6 +1,4 @@
-function Reis(props) {
-  // console.log(props)
-
+function Card(props) {
   const lastLegIndex = props.legs.length - 1;
   const lastStopIndex = props.legs[lastLegIndex].stops.length - 1;
   const crowdStyle =
@@ -89,4 +87,4 @@ function Reis(props) {
   );
 }
 
-export default Reis;
+export default Card;

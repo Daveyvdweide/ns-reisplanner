@@ -1,15 +1,15 @@
 @import "./variables";
 @import "../components/Navbar/navbar";
 @import "../components/Startpagina/startpagina";
-@import "../components/Input/input";
+@import "../components/Journey/Planner/planner";
 @import "../components/Background/background";
-@import "../components/Verstoring/verstoring";
-@import "../components/Verstoringen/verstoringen";
-@import "../components/VerstoringView/verstoringview";
+@import "../components/Disruption/Card/card";
+@import "../components/Disruption/Overview/overview";
+@import "../components/Disruption/Detail/detail";
 @import "../components/NavSlideout/navslideout";
-@import "../components/Reizen/reizen";
-@import "../components/Reis/reis";
-@import "../components/ReisView/reisview";
+@import "../components/Journey/Overview/overview";
+@import "../components/Journey/Card/card";
+@import "../components/Journey/Detail/detail";
 @import "../components/StationMap/stationmap";
 
 * {

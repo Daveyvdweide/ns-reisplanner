@@ -7,7 +7,7 @@ import {
 import Navbar from "./components/Navbar/Navbar";
 import Startpagina from "./components/Startpagina/Startpagina";
 import Background from "./components/Background/Background";
-import Verstoringen from './components/Verstoringen/Verstoringen';
+import Overview from './components/Disruption/Overview/Overview';
 import StationMap from "./components/StationMap/StationMap";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Startpagina />} />
-          <Route path="/verstoringen" element={<Verstoringen />} />
+          <Route path="/verstoringen" element={<Overview />} />
           <Route path="/stations" element={<StationMap />} />
         </Routes>
         <Background />

@@ -1,4 +1,4 @@
-function Verstoring(props) {
+function Card(props) {
     return (
         <div className="verstoring" onClick={() => {
             props.updateDisruption(props.id);
@@ -59,4 +59,4 @@ function Verstoring(props) {
     );
 }
 
-export default Verstoring;
+export default Card;

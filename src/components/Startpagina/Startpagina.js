@@ -1,8 +1,8 @@
-import Input from "../Input/Input";
+import Planner from "../Journey/Planner/Planner";
 import React, { useState } from "react";
 import GetAllStations from "../../GetAllStations";
-import Reizen from "../Reizen/Reizen";
-import ReisView from "../ReisView/ReisView";
+import Overview from "../Journey/Overview/Overview";
+import Detail from "../Journey/Detail/Detail";
 
 function Startpagina() {
   const [style, setStyle] = useState("startpagina");
@@ -62,7 +62,7 @@ function Startpagina() {
     <div className={style}>
       <GetAllStations handler={importStations} />
       <div className="startpagina--input">
-        <Input
+        <Planner
           changeInputFormData={changeInputFormData}
           inputFormData={inputFormData}
           setInputFormData={setInputFormData}
@@ -79,7 +79,7 @@ function Startpagina() {
         onClick={() => setStyle("startpagina on-button-click")}
       >
         {formIsSubmitted ? (
-          <Reizen
+          <Overview
             fromStation={inputFormData.fromStation}
             toStation={inputFormData.toStation}
             dateTime={inputFormData.requestDateTime}
@@ -94,7 +94,7 @@ function Startpagina() {
       </div>
       <div className="startpagina--reisview">
         {tripView !== undefined && (
-          <ReisView legs={tripView.legs} tripView={tripView} />
+          <Detail legs={tripView.legs} tripView={tripView} />
         )}
       </div>
     </div>

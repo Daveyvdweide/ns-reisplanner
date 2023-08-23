@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import Verstoring from "../Verstoring/Verstoring";
-import VerstoringView from "../VerstoringView/VerstoringView";
+import Card from "../Card/Card";
+import Detail from "../Detail/Detail";
 
-function Verstoringen() {
+function Overview() {
     const disruptionListStyle = {
         disruptionsList: '',
         disruptionView: 'verstoringpage--invisible',
@@ -84,7 +84,7 @@ function Verstoringen() {
 
                 <div className={`verstoringen--container ${disruptionStyles.disruptionsList}`}>
                     {items.map((item, id) => (
-                        <Verstoring
+                        <Card
                             updateDisruption={updateDisruption}
                             key={id}
                             id={id}
@@ -103,7 +103,7 @@ function Verstoringen() {
                         />
                     ))}
                 </div>
-                <VerstoringView item={selectedItem} style={disruptionStyles} handleClick={changeDisruptionPageToList}
+                <Detail item={selectedItem} style={disruptionStyles} handleClick={changeDisruptionPageToList}
                     backButtonStyle={disruptionStyles.disruptionBackButton}
                     changeDisruptionPageToList={changeDisruptionPageToList} />
             </div>
@@ -111,4 +111,4 @@ function Verstoringen() {
     }
 }
 
-export default Verstoringen;
+export default Overview;

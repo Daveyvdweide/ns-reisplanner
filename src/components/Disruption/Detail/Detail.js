@@ -1,4 +1,4 @@
-function VerstoringView(props) {
+function Detail(props) {
     const disruption = props.item;
     var markup;
 
@@ -113,4 +113,4 @@ function VerstoringView(props) {
     return markup;
 }
 
-export default VerstoringView;
+export default Detail;
