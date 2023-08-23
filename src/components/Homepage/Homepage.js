@@ -4,8 +4,8 @@ import GetAllStations from "../../services/GetAllStations";
 import Overview from "../Journey/Overview/Overview";
 import Detail from "../Journey/Detail/Detail";
 
-function Startpagina() {
-  const [style, setStyle] = useState("startpagina");
+function Homepage() {
+  const [style, setStyle] = useState("homepage");
   const currentDate = new Date();
 
   const [allStations, setAllStations] = useState([]);
@@ -57,7 +57,7 @@ function Startpagina() {
   return (
     <div className={style}>
       <GetAllStations handler={importStations} />
-      <div className="startpagina--input">
+      <div className="homepage--input">
         <Planner
           changeInputFormData={changeInputFormData}
           inputFormData={inputFormData}
@@ -68,11 +68,11 @@ function Startpagina() {
         />
       </div>
       {formIsSubmitted ? (
-        <h2 className="startpagina--reizen-title">Resultaten</h2>
+        <h2 className="homepage--reizen-title">Resultaten</h2>
       ) : null}
       <div
-        className="startpagina--reizen"
-        onClick={() => setStyle("startpagina on-button-click")}
+        className="homepage--reizen"
+        onClick={() => setStyle("homepage on-button-click")}
       >
         {formIsSubmitted ? (
           <Overview
@@ -88,7 +88,7 @@ function Startpagina() {
           />
         ) : null}
       </div>
-      <div className="startpagina--journeyview">
+      <div className="homepage--journeyview">
         {tripView !== undefined && (
           <Detail legs={tripView.legs} tripView={tripView} />
         )}
@@ -97,4 +97,4 @@ function Startpagina() {
   );
 }
 
-export default Startpagina;
+export default Homepage;

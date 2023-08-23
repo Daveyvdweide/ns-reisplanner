@@ -173,7 +173,7 @@ nav li {
   }
 }
 
-.startpagina {
+.homepage {
   position: absolute;
   bottom: 0;
   top: 100px;
@@ -197,7 +197,7 @@ nav li {
   right: 0%;
 }
 
-.startpagina--input {
+.homepage--input {
   grid-row: 1 / -1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -218,11 +218,11 @@ nav li {
   scrollbar-width: none;
 }
 
-.startpagina--input::-webkit-scrollbar {
+.homepage--input::-webkit-scrollbar {
   display: none;
 }
 
-.startpagina--reizen-title {
+.homepage--reizen-title {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
@@ -238,7 +238,7 @@ nav li {
   color: #003183;
 }
 
-.startpagina--reizen {
+.homepage--reizen {
   grid-row: 2 / -1;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -250,11 +250,11 @@ nav li {
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-.startpagina--reizen::-webkit-scrollbar {
+.homepage--reizen::-webkit-scrollbar {
   display: none;
 }
 
-.startpagina--journeyview {
+.homepage--journeyview {
   margin: 1rem 3rem 3rem 0rem;
   grid-row: 2 / -1;
   -ms-grid-column: 3;
