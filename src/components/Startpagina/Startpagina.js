@@ -1,6 +1,6 @@
 import Planner from "../Journey/Planner/Planner";
 import React, { useState } from "react";
-import GetAllStations from "../../GetAllStations";
+import GetAllStations from "../../services/GetAllStations";
 import Overview from "../Journey/Overview/Overview";
 import Detail from "../Journey/Detail/Detail";
 
