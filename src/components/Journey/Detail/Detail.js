@@ -18,9 +18,6 @@ function Detail(props) {
     ].plannedArrivalDateTime.lastIndexOf("+") - 3
   );
 
-  console.log(props.tripView);
-  console.log(props.legs);
-
   const tripView = props.tripView;
 
   return (
@@ -90,7 +87,6 @@ function Detail(props) {
                       <p>Richting {leg.direction}</p>
                     </div>
                     <div className="journeyview--leg-item-center-right">
-                      {/* <p>{leg.crowdForecast}</p> */}
                       <p>
                         <svg
                           className={crowdStyle}

@@ -13,10 +13,6 @@ function Detail(props) {
                 <div className="disruptionview--calamity">
                     <h2>{disruption.title}</h2>
                     <p>{disruption.description}</p>
-                    {/* <Link to="/">
-                        <button>Plan je reis</button>
-                    </Link>  */}
-
                 </div>
             </div>
         )

@@ -22,7 +22,6 @@ function Startpagina() {
 
   function changeTripView(data) {
     setTripView(data);
-    console.log(tripView);
   }
 
   const [inputFormData, setInputFormData] = useState({
@@ -47,7 +46,6 @@ function Startpagina() {
   }
 
   function submitInputFormData() {
-    // console.log("yeet");
     setSubmittedInputFormData({ ...inputFormData });
     //execute call to API with values from inputFormData
   }
@@ -55,8 +53,6 @@ function Startpagina() {
   function showJourney() {
     setFormIsSubmitted(true);
   }
-
-  // console.log(formIsSubmitted);
 
   return (
     <div className={style}>

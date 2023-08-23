@@ -20,7 +20,6 @@ function Overview(props) {
         (result) => {
           setIsLoaded(true);
           props.updateTrips(result.trips);
-          console.log(result.trips);
         },
         (error) => {
           setIsLoaded(true);

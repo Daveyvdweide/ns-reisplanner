@@ -49,7 +49,6 @@ function Overview() {
         }).then(res => res.json())
             .then(
                 (result) => {
-                    console.log(result);
                     var notCalamity = [];
                     var calamity = [];
                     setIsLoaded(true);
