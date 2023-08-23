@@ -254,7 +254,7 @@ nav li {
   display: none;
 }
 
-.startpagina--reisview {
+.startpagina--journeyview {
   margin: 1rem 3rem 3rem 0rem;
   grid-row: 2 / -1;
   -ms-grid-column: 3;
@@ -277,7 +277,11 @@ nav li {
           box-shadow: 5px 6px 15px -2px rgba(0, 0, 0, 0.2);
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "from from" "to to" "date time" "vertrek aankomst" "submit submit";
+      grid-template-areas: "from from"
+ "to to"
+ "date time"
+ "vertrek aankomst"
+ "submit submit";
   gap: 1rem;
   max-width: 450px;
   padding: 3rem;
@@ -961,7 +965,7 @@ nav li {
   }
 }
 
-.reis {
+.journey {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -980,12 +984,12 @@ nav li {
           box-shadow: 0px 6px 5px -2px rgba(0, 0, 0, 0.1);
 }
 
-.reis:hover {
+.journey:hover {
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
 }
 
-.reis--left {
+.journey--left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -998,24 +1002,24 @@ nav li {
           justify-content: space-between;
 }
 
-.reis--left .reis--left-top {
+.journey--left .journey--left-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.reis--left .reis--left-top p {
+.journey--left .journey--left-top p {
   line-height: 1em;
   margin-right: 0.5rem;
   color: #003183;
   font-size: 1.7rem;
 }
 
-.reis--left .reis--left-bottom {
+.journey--left .journey--left-bottom {
   font-size: 1rem;
 }
 
-.reis--right {
+.journey--right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1031,7 +1035,7 @@ nav li {
           align-items: flex-end;
 }
 
-.reis--right .reis--right-top {
+.journey--right .journey--right-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1043,31 +1047,31 @@ nav li {
   color: #003183;
 }
 
-.reis--right .reis--right-top p {
+.journey--right .journey--right-top p {
   line-height: 0em;
   margin-left: 1rem;
   font-weight: 500;
 }
 
-.reis--right .reis--right-top svg {
+.journey--right .journey--right-top svg {
   height: 20px;
   margin-left: 1rem;
   fill: #003183;
 }
 
-.reis--right .reis--right-top svg:first-child {
+.journey--right .journey--right-top svg:first-child {
   margin-right: 0.3rem;
 }
 
-.reis--right .reis--right-top .crowd-low {
+.journey--right .journey--right-top .crowd-low {
   fill: green;
 }
 
-.reis--right .reis--right-top .crowd-medium {
+.journey--right .journey--right-top .crowd-medium {
   fill: orange;
 }
 
-.reis--right .reis--right-top .crowd-high {
+.journey--right .journey--right-top .crowd-high {
   fill: red;
 }
 
@@ -1088,7 +1092,7 @@ nav li {
   }
 }
 
-.reisview {
+.journeyview {
   background-color: #ffffff;
   width: 100%;
   border-radius: 1rem;
@@ -1099,7 +1103,7 @@ nav li {
   margin-bottom: 1rem;
 }
 
-.reisview--top {
+.journeyview--top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1111,41 +1115,42 @@ nav li {
           align-items: center;
 }
 
-.reisview--top-left {
+.journeyview--top-left {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "depart space arrive" "departtime arrow arrivetime";
+      grid-template-areas: "depart space arrive"
+ "departtime arrow arrivetime";
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
 
-.reisview--top-label {
+.journeyview--top-label {
   margin-right: 0.5rem;
   font-family: "Poppins", sans-serif;
   color: #3f3f3f;
   font-size: 0.7rem;
 }
 
-.reisview--top-label:first-child {
+.journeyview--top-label:first-child {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: depart;
 }
 
-.reisview--top-label:nth-child(2) {
+.journeyview--top-label:nth-child(2) {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: space;
 }
 
-.reisview--top-label:nth-child(3) {
+.journeyview--top-label:nth-child(3) {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: arrive;
 }
 
-.reisview--top-time {
+.journeyview--top-time {
   margin-right: 0.5rem;
   font-family: "Poppins", sans-serif;
   color: #003183;
@@ -1153,42 +1158,42 @@ nav li {
   line-height: 1em;
 }
 
-.reisview--top-time:first-child {
+.journeyview--top-time:first-child {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: departtime;
 }
 
-.reisview--top-time:nth-child(2) {
+.journeyview--top-time:nth-child(2) {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: arrow;
 }
 
-.reisview--top-time:nth-child(3) {
+.journeyview--top-time:nth-child(3) {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: arrivetime;
 }
 
-.reisview--top-right {
+.journeyview--top-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.reisview--top-right-container p {
+.journeyview--top-right-container p {
   font-family: "Poppins", sans-serif;
   color: #003183;
 }
 
-.reisview--top-right-container svg {
+.journeyview--top-right-container svg {
   height: 15px;
   fill: #003183;
   margin-right: 0.6em;
 }
 
-.reisview--top-plannedtrack {
+.journeyview--top-plannedtrack {
   font-family: "Poppins", sans-serif;
   font-size: 1.3rem;
   color: #003183;
@@ -1210,19 +1215,19 @@ nav li {
       flex-shrink: 0;
 }
 
-.reisview--leg-item {
+.journeyview--leg-item {
   margin-left: 2rem;
   font-family: "Poppins", sans-serif;
 }
 
-.reisview--leg-item-station {
+.journeyview--leg-item-station {
   color: #003183;
   font-size: 1.2rem;
   line-height: 1em;
   margin-top: 0em;
 }
 
-.reisview--leg-item-top {
+.journeyview--leg-item-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1236,21 +1241,21 @@ nav li {
   padding-top: 0em;
 }
 
-.reisview--leg-item-top-time {
+.journeyview--leg-item-top-time {
   font-weight: 700;
   color: #003183;
   font-size: 1.7rem;
 }
 
-.reisview--leg-item-departuretrack {
+.journeyview--leg-item-departuretrack {
   color: #003183;
 }
 
-.reisview--leg-item-arrivaltrack {
+.journeyview--leg-item-arrivaltrack {
   color: #a7a7a7;
 }
 
-.reisview--leg-item-center {
+.journeyview--leg-item-center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1265,24 +1270,24 @@ nav li {
   padding: 1em 0em;
 }
 
-.reisview--leg-item-center-right svg {
+.journeyview--leg-item-center-right svg {
   height: 20px;
   margin-left: 1rem;
 }
 
-.reisview--leg-item-center-right .crowd-low {
+.journeyview--leg-item-center-right .crowd-low {
   fill: green;
 }
 
-.reisview--leg-item-center-right .crowd-medium {
+.journeyview--leg-item-center-right .crowd-medium {
   fill: orange;
 }
 
-.reisview--leg-item-center-right .crowd-high {
+.journeyview--leg-item-center-right .crowd-high {
   fill: red;
 }
 
-.reisview--leg-item-bottom {
+.journeyview--leg-item-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1295,39 +1300,39 @@ nav li {
   padding: 1em 0em;
 }
 
-.reisview--leg-item-bottom-time {
+.journeyview--leg-item-bottom-time {
   color: #003183;
   font-size: 1.7rem;
 }
 
-.reisview--prices {
+.journeyview--prices {
   font-family: "Poppins", sans-serif;
   margin-top: 1.5rem;
 }
 
-.reisview--prices h4 {
+.journeyview--prices h4 {
   font-size: 1.2rem;
   color: #003183;
 }
 
-.reisview--prices h5 {
+.journeyview--prices h5 {
   font-size: 1.7rem;
   font-weight: 500;
 }
 
-.reisview--prices p {
+.journeyview--prices p {
   margin-top: -0.5rem;
   margin-bottom: .5rem;
   color: #003183;
 }
 
-.reisview--prices-container {
+.journeyview--prices-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.reisview--price:first-child {
+.journeyview--price:first-child {
   margin-right: 1.5rem;
 }
 

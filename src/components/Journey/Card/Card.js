@@ -34,10 +34,10 @@ function Card(props) {
 
   return (
     <div>
-      <div className="reis" onClick={() => props.changeTripView(props.trip)}>
-        <div className="reis--left">
-          {isCancelled && <p className="text-red">Reis geannuleerd</p>}
-          <div className="reis--left-top">
+      <div className="journey" onClick={() => props.changeTripView(props.trip)}>
+        <div className="journey--left">
+          {isCancelled && <p className="text-red">journey geannuleerd</p>}
+          <div className="journey--left-top">
             <p className={`"" ${isCancelled && "journey-cancelled"}`}>
               {departureTime}
             </p>
@@ -47,15 +47,15 @@ function Card(props) {
             </p>
           </div>
           <p
-            className={`reis--left-bottom ${
+            className={`journey--left-bottom ${
               isCancelled && "journey-cancelled"
             }`}
           >
             &#128337; {props.trip.plannedDurationInMinutes} min
           </p>
         </div>
-        <div className="reis--right">
-          <div className="reis--right-top">
+        <div className="journey--right">
+          <div className="journey--right-top">
             <p>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 12">
                 <path d="M8.586,3.879a2.5,2.5,0,1,0-.707.707L13,9.707V8.293ZM7.561,3.561a1.5,1.5,0,1,1,0-2.121A1.491,1.491,0,0,1,7.561,3.561ZM6.5,7a2.5,2.5,0,0,0-1.379.414L0,2.293V3.707L4.414,8.121A2.5,2.5,0,1,0,6.5,7Zm1.061,3.561A1.5,1.5,0,0,1,5.439,8.44h0a1.5,1.5,0,1,1,2.122,2.121Z"></path>
@@ -76,7 +76,7 @@ function Card(props) {
               />
             </svg>
           </div>
-          <p className={`reis--right-bottom ${isCancelled && "text-red"}`}>
+          <p className={`journey--right-bottom ${isCancelled && "text-red"}`}>
             {!isCancelled
               ? `Spoor ${props.legs[0].origin.plannedTrack}`
               : "Rijdt niet"}

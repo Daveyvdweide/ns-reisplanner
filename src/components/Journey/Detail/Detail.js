@@ -24,22 +24,22 @@ function Detail(props) {
   const tripView = props.tripView;
 
   return (
-    <div className="reisview">
+    <div className="journeyview">
 
 
       {tripView ? (
         <div>
-          <div className="reisview--top">
-            <div className="reisview--top-left">
-              <p className="reisview--top-label">Vertrek</p>
-              <p className="reisview--top-label">{" "}</p>
-              <p className="reisview--top-label">Aankomst</p>
-              <p className="reisview--top-time">{departureTime}</p>
-              <p className="reisview--top-time">&#129030;</p>
-              <p className="reisview--top-time">{arrivalTime}</p>
+          <div className="journeyview--top">
+            <div className="journeyview--top-left">
+              <p className="journeyview--top-label">Vertrek</p>
+              <p className="journeyview--top-label">{" "}</p>
+              <p className="journeyview--top-label">Aankomst</p>
+              <p className="journeyview--top-time">{departureTime}</p>
+              <p className="journeyview--top-time">&#129030;</p>
+              <p className="journeyview--top-time">{arrivalTime}</p>
             </div>
-            <div className="reisview--top-right">
-              <div className="reisview--top-right-container">
+            <div className="journeyview--top-right">
+              <div className="journeyview--top-right-container">
                 <p>
                   &#128337; {props.tripView.plannedDurationInMinutes} minuten
                 </p>
@@ -50,12 +50,12 @@ function Detail(props) {
                   {props.tripView.transfers}x overstappen
                 </p>
               </div>
-              <div className="reisview--top-plannedtrack">{props.legs[0].origin.plannedTrack}</div>
+              <div className="journeyview--top-plannedtrack">{props.legs[0].origin.plannedTrack}</div>
             </div>
           </div>
           <br />
 
-          <div className="reisview--leg-items-container">
+          <div className="journeyview--leg-items-container">
 
 
             {tripView.legs.map((leg, id) => {
@@ -67,29 +67,29 @@ function Detail(props) {
                     : "crowd-high";
 
               return (
-                <div className="reisview--leg-item" key={id}>
+                <div className="journeyview--leg-item" key={id}>
 
-                  <div className="reisview--leg-item-top">
-                    <div className="reisview--leg-item-top-left">
-                      <p className="reisview--leg-item-top-time">
+                  <div className="journeyview--leg-item-top">
+                    <div className="journeyview--leg-item-top-left">
+                      <p className="journeyview--leg-item-top-time">
                         {leg.origin.plannedDateTime.substring(
                           leg.origin.plannedDateTime.indexOf("T") + 1,
                           leg.origin.plannedDateTime.lastIndexOf("+") - 3
                         )}
                       </p>
-                      {id === 0 && <p className="reisview--leg-item-station">{leg.origin.name}</p>}
+                      {id === 0 && <p className="journeyview--leg-item-station">{leg.origin.name}</p>}
                     </div>
-                    <div className="reisview--leg-item-top-right">
-                      <p className="reisview--leg-item-departuretrack"> Spoor {leg.origin.plannedTrack}</p>
+                    <div className="journeyview--leg-item-top-right">
+                      <p className="journeyview--leg-item-departuretrack"> Spoor {leg.origin.plannedTrack}</p>
                     </div>
                   </div>
 
-                  <div className="reisview--leg-item-center">
-                    <div className="reisview--leg-item-center-left">
+                  <div className="journeyview--leg-item-center">
+                    <div className="journeyview--leg-item-center-left">
                       <p>{leg.product.displayName}</p>
                       <p>Richting {leg.direction}</p>
                     </div>
-                    <div className="reisview--leg-item-center-right">
+                    <div className="journeyview--leg-item-center-right">
                       {/* <p>{leg.crowdForecast}</p> */}
                       <p>
                         <svg
@@ -109,9 +109,9 @@ function Detail(props) {
 
 
                   </div>
-                  <div className="reisview--leg-item-bottom">
-                    <div className="reisview--leg-item-bottom-left">
-                      <p className="reisview--leg-item-bottom-time">
+                  <div className="journeyview--leg-item-bottom">
+                    <div className="journeyview--leg-item-bottom-left">
+                      <p className="journeyview--leg-item-bottom-time">
                         {leg.destination.plannedDateTime.substring(
                           leg.stops[
                             leg.stops.length - 1
@@ -121,10 +121,10 @@ function Detail(props) {
                           ].plannedArrivalDateTime.lastIndexOf("+") - 3
                         )}
                       </p>
-                      <p className="reisview--leg-item-station">{leg.destination.name}</p>
+                      <p className="journeyview--leg-item-station">{leg.destination.name}</p>
                     </div>
-                    <div className="reisview--leg-item-bottom-right">
-                      <p className="reisview--leg-item-arrivaltrack">Spoor {leg.stops[leg.stops.length - 1].actualArrivalTrack}</p>
+                    <div className="journeyview--leg-item-bottom-right">
+                      <p className="journeyview--leg-item-arrivaltrack">Spoor {leg.stops[leg.stops.length - 1].actualArrivalTrack}</p>
                     </div>
                   </div>
 
@@ -134,14 +134,14 @@ function Detail(props) {
           </div>
 
           {props.tripView.fares !== undefined && props.tripView.fares[0] !== undefined ?
-            <div className="reisview--prices">
+            <div className="journeyview--prices">
               <h4>Prijzen</h4>
-              <div className="reisview--prices-container">
-                <div className="reisview--price">
+              <div className="journeyview--prices-container">
+                <div className="journeyview--price">
                   <h5>&#x20AC; {((props.tripView.fares[0].priceInCents) / 100).toFixed(2)}</h5>
                   <p>Enkele reis, 1e klas</p>
                 </div>
-                <div className="reisview--price">
+                <div className="journeyview--price">
                   <h5>&#x20AC; {((props.tripView.fares[1].priceInCents) / 100).toFixed(2)}</h5>
                   <p>Enkele reis, 2e klas</p>
                 </div>

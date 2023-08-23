@@ -52,7 +52,7 @@ function Startpagina() {
     //execute call to API with values from inputFormData
   }
 
-  function showReis() {
+  function showJourney() {
     setFormIsSubmitted(true);
   }
 
@@ -68,7 +68,7 @@ function Startpagina() {
           setInputFormData={setInputFormData}
           submitInputFormData={submitInputFormData}
           filterStation={allStations}
-          handleSubmitClick={showReis}
+          handleSubmitClick={showJourney}
         />
       </div>
       {formIsSubmitted ? (
@@ -92,7 +92,7 @@ function Startpagina() {
           />
         ) : null}
       </div>
-      <div className="startpagina--reisview">
+      <div className="startpagina--journeyview">
         {tripView !== undefined && (
           <Detail legs={tripView.legs} tripView={tripView} />
         )}

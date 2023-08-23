@@ -1,6 +1,6 @@
 @import "../../styles/variables";
 
-.reis {
+.journey {
     display: flex;
     justify-content: space-between;
     background-color: $clr--white;
@@ -17,12 +17,12 @@
     }
 }
 
-.reis--left {
+.journey--left {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    .reis--left-top {
+    .journey--left-top {
         display: flex;
 
         p {
@@ -33,18 +33,18 @@
         }
     }
 
-    .reis--left-bottom {
+    .journey--left-bottom {
         font-size: 1rem;
     }
 }
 
-.reis--right {
+.journey--right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
 
-    .reis--right-top {
+    .journey--right-top {
         display: flex;
         align-items: center;
         font-size: 1.2rem;

@@ -1,6 +1,6 @@
 @import "../../styles/variables";
 
-.reisview {
+.journeyview {
     background-color: $clr--white;
     width: 100%;
     border-radius: 1rem;
@@ -10,13 +10,13 @@
     margin-bottom: 1rem;
 }
 
-.reisview--top {
+.journeyview--top {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.reisview--top-left {
+.journeyview--top-left {
     display: grid;
     grid-template-areas:
         "depart space arrive"
@@ -24,7 +24,7 @@
     width: max-content;
 }
 
-.reisview--top-label {
+.journeyview--top-label {
     margin-right: 0.5rem;
     font-family: $font--poppins;
     color: #3f3f3f;
@@ -43,7 +43,7 @@
     }
 }
 
-.reisview--top-time {
+.journeyview--top-time {
     margin-right: 0.5rem;
     font-family: $font--poppins;
     color: $clr--blue;
@@ -64,11 +64,11 @@
     }
 }
 
-.reisview--top-right {
+.journeyview--top-right {
     display: flex;
 }
 
-.reisview--top-right-container {
+.journeyview--top-right-container {
     p {
         font-family: $font--poppins;
         color: $clr--blue;
@@ -81,7 +81,7 @@
     }
 }
 
-.reisview--top-plannedtrack {
+.journeyview--top-plannedtrack {
     font-family: $font--poppins;
     font-size: 1.3rem;
     color: $clr--blue;
@@ -96,19 +96,19 @@
     flex-shrink: 0;
 }
 
-.reisview--leg-item {
+.journeyview--leg-item {
     margin-left: 2rem;
     font-family: $font--poppins;
 }
 
-.reisview--leg-item-station {
+.journeyview--leg-item-station {
     color: $clr--blue;
     font-size: 1.2rem;
     line-height: 1em;
     margin-top: 0em;
 }
 
-.reisview--leg-item-top {
+.journeyview--leg-item-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -118,21 +118,21 @@
 }
 
 
-.reisview--leg-item-top-time {
+.journeyview--leg-item-top-time {
     font-weight: $font-weight--bold;
     color: $clr--blue;
     font-size: 1.7rem;
 }
 
-.reisview--leg-item-departuretrack {
+.journeyview--leg-item-departuretrack {
     color: $clr--blue;
 }
 
-.reisview--leg-item-arrivaltrack {
+.journeyview--leg-item-arrivaltrack {
     color: #a7a7a7;
 }
 
-.reisview--leg-item-center {
+.journeyview--leg-item-center {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -141,7 +141,7 @@
     padding: 1em 0em;
 }
 
-.reisview--leg-item-center-right {
+.journeyview--leg-item-center-right {
     svg {
         height: 20px;
         margin-left: 1rem;
@@ -160,19 +160,19 @@
     }
 }
 
-.reisview--leg-item-bottom {
+.journeyview--leg-item-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em 0em;
 }
 
-.reisview--leg-item-bottom-time {
+.journeyview--leg-item-bottom-time {
     color: $clr--blue;
     font-size: 1.7rem;
 }
 
-.reisview--prices {
+.journeyview--prices {
     font-family: $font--poppins;
     margin-top: 1.5rem;
 
@@ -195,11 +195,11 @@
     }
 }
 
-.reisview--prices-container {
+.journeyview--prices-container {
     display: flex;
 }
 
-.reisview--price {
+.journeyview--price {
     &:first-child {
         margin-right: 1.5rem;
     }
