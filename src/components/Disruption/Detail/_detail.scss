@@ -1,6 +1,6 @@
 @import "../../styles/variables";
 
-.verstoringview {
+.disruptionview {
   min-height: max-content;
   display: flex;
   flex-direction: column;
@@ -18,11 +18,11 @@
   scrollbar-width: none;
 }
 
-.verstoringview::-webkit-scrollbar {
+.disruptionview::-webkit-scrollbar {
   display: none;
 }
 
-.verstoringview--header {
+.disruptionview--header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
@@ -41,7 +41,7 @@
   }
 }
 
-.verstoringview--calamity {
+.disruptionview--calamity {
   h2 {
     margin-top: 0px;
     line-height: 1.2em;
@@ -49,7 +49,7 @@
   }
 }
 
-.verstoringview--item {
+.disruptionview--item {
   margin-top: 1rem;
   background-color: $clr--grey-light;
   border-radius: 0.5rem;
@@ -68,7 +68,7 @@
   }
 }
 
-.verstoringview--calamity {
+.disruptionview--calamity {
   h2 {
     margin-top: 0;
     margin-bottom: 1rem;
@@ -95,13 +95,13 @@
   }
 }
 
-.verstoringen--button {
+.disruptionen--button {
   display: none;
   margin-bottom: 0.5rem;
 }
 
 @media screen and (max-width: 850px) {
-  .verstoringview {
+  .disruptionview {
     grid-column: 1 / 2;
     margin-left: 0rem;
     margin-bottom: 0rem;
@@ -118,11 +118,11 @@
     padding-top: 0px;
   }
 
-  .verstoringpage--invisible {
+  .disruptionpage--invisible {
     display: none;
   }
 
-  .verstoringen--button {
+  .disruptionen--button {
     display: block;
     align-self: flex-start;
     background-color: transparent;
@@ -139,13 +139,13 @@
     }
   }
 
-  .verstoringview--content {
+  .disruptionview--content {
     margin-top: auto;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .verstoringview--item {
+  .disruptionview--item {
     grid-template-columns: 1fr;
   }
 }

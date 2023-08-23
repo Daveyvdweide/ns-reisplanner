@@ -1,6 +1,6 @@
 @import "../../styles/variables";
 
-.verstoringen {
+.disruptionen {
   height: calc(100% - 100px);
   margin-top: 100px;
   display: grid;
@@ -18,7 +18,7 @@
   }
 }
 
-.verstoringen--container {
+.disruptionen--container {
   grid-column: 1 / 2;
   overflow-y: scroll;
   -ms-overflow-style: none;
@@ -26,21 +26,21 @@
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-.verstoringen--container::-webkit-scrollbar {
+.disruptionen--container::-webkit-scrollbar {
   display: none;
 }
 
 @media screen and (max-width: 850px) {
-  .verstoringen {
+  .disruptionen {
     display: flex;
     flex-direction: column;
   }
 
-  .verstoringen--hide-title {
+  .disruptionen--hide-title {
     display: none;
   }
 
-  .verstoringbutton--invisible {
+  .disruptionbutton--invisible {
     display: none;
   }
 }

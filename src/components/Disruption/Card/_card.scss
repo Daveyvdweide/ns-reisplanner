@@ -1,6 +1,6 @@
 @import "../../styles/variables";
 
-.verstoring {
+.disruption {
   background-color: $clr--white;
   margin-bottom: 1rem;
   border-radius: $border-radius;
@@ -15,12 +15,12 @@
   }
 }
 
-.verstoring--cause {
+.disruption--cause {
   color: rgb(255, 145, 0);
   font-size: 1rem;
 }
 
-.verstoring--header {
+.disruption--header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1em;
@@ -38,14 +38,14 @@
   }
 }
 
-.verstoring--title {
+.disruption--title {
   h4 {
     color: $clr--blue;
     font-size: 1rem;
   }
 }
 
-.verstoring--content {
+.disruption--content {
   display: grid;
   grid-template-columns: minmax(110px, 1fr) 4fr;
   font-size: 0.9rem;
@@ -62,7 +62,7 @@
 }
 
 @media screen and (max-width: 450px) {
-  .verstoring--content {
+  .disruption--content {
     grid-template-columns: 1fr;
   }
 }

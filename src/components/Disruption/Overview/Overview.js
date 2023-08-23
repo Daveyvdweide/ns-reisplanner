@@ -5,15 +5,15 @@ import Detail from "../Detail/Detail";
 function Overview() {
     const disruptionListStyle = {
         disruptionsList: '',
-        disruptionView: 'verstoringpage--invisible',
+        disruptionView: 'disruptionpage--invisible',
         disruptionTitle: '',
-        disruptionBackButton: 'verstoringbutton--invisible'
+        disruptionBackButton: 'disruptionbutton--invisible'
     }
 
     const disruptionviewStyle = {
-        disruptionsList: 'verstoringpage--invisible',
+        disruptionsList: 'disruptionpage--invisible',
         disruptionView: '',
-        disruptionTitle: 'verstoringen--hide-title',
+        disruptionTitle: 'disruptionen--hide-title',
         disruptionBackButton: ''
     }
 
@@ -79,10 +79,10 @@ function Overview() {
         return <div className="API-message nav-margin">Loading...</div>;
     } else {
         return (
-            <div className="verstoringen">
+            <div className="disruptionen">
                 <h2 className={disruptionStyles.disruptionTitle}>Verstoringen</h2>
 
-                <div className={`verstoringen--container ${disruptionStyles.disruptionsList}`}>
+                <div className={`disruptionen--container ${disruptionStyles.disruptionsList}`}>
                     {items.map((item, id) => (
                         <Card
                             updateDisruption={updateDisruption}

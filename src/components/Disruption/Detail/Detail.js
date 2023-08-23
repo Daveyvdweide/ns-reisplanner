@@ -6,11 +6,11 @@ function Detail(props) {
 
     if (disruption.type === 'CALAMITY') {
         markup = (
-            <div className={`verstoringview ${props.style.disruptionView}`}>
-                <button className={`verstoringen--button ${props.backbuttonstyle}`} onClick={props.changeDisruptionPageToList}>
+            <div className={`disruptionview ${props.style.disruptionView}`}>
+                <button className={`disruptionen--button ${props.backbuttonstyle}`} onClick={props.changeDisruptionPageToList}>
                     &#129168; Terug
                 </button>
-                <div className="verstoringview--calamity">
+                <div className="disruptionview--calamity">
                     <h2>{disruption.title}</h2>
                     <p>{disruption.description}</p>
                     {/* <Link to="/">
@@ -23,12 +23,12 @@ function Detail(props) {
     }
     if (disruption.type === 'DISRUPTION') {
         markup = (
-            <div className={`verstoringview ${props.style.disruptionView}`}>
-                <button className={`verstoringen--button ${props.backbuttonstyle}`} onClick={props.changeDisruptionPageToList}>
+            <div className={`disruptionview ${props.style.disruptionView}`}>
+                <button className={`disruptionen--button ${props.backbuttonstyle}`} onClick={props.changeDisruptionPageToList}>
                     &#129168; Terug
                 </button>
-                <div className="verstoringview--header">
-                    <div className="verstoringview--header-title">
+                <div className="disruptionview--header">
+                    <div className="disruptionview--header-title">
                         {disruption.title.split(';').map(str => <h2 key={str}>{str.replace("-", " - ")}</h2>)}
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="29.253" height="27" viewBox="0 0 29.253 27">
@@ -36,21 +36,21 @@ function Detail(props) {
                     </svg>
                 </div>
 
-                <div className="verstoringview--content">
+                <div className="disruptionview--content">
                     {disruption.timespans[0].cause &&
-                        <div className="verstoringview--item">
+                        <div className="disruptionview--item">
                             <h3>Oorzaak</h3>
                             <p>{disruption.timespans[0].cause.label}</p>
                         </div>
                     }
                     {disruption.timespans[0].situation &&
-                        <div className="verstoringview--item">
+                        <div className="disruptionview--item">
                             <h3>Gevolg</h3>
                             <p>{disruption.timespans[0].situation.label}</p>
                         </div>
                     }
                     {disruption.expectedDuration &&
-                        <div className="verstoringview--item">
+                        <div className="disruptionview--item">
                             <h3>Verwachte duur</h3>
                             <p>{disruption.expectedDuration.description}</p>
                         </div>
@@ -62,13 +62,13 @@ function Detail(props) {
 
     if (disruption.type === 'MAINTENANCE') {
         markup = (
-            <div className={`verstoringview ${props.style.disruptionView}`}>
-                <button className={`verstoringen--button ${props.backbuttonstyle}`} onClick={props.changeDisruptionPageToList}>
+            <div className={`disruptionview ${props.style.disruptionView}`}>
+                <button className={`disruptionen--button ${props.backbuttonstyle}`} onClick={props.changeDisruptionPageToList}>
                     &#129168; Terug
                 </button>
-                <div className="verstoringview--header">
-                    <div className="verstoringview--header-title">
-                        <p className="verstoring--cause">{disruption.timespans[0].cause.label}</p>
+                <div className="disruptionview--header">
+                    <div className="disruptionview--header-title">
+                        <p className="disruption--cause">{disruption.timespans[0].cause.label}</p>
                         {disruption.title.split(';').map(str => <h2 key={str}>{str}</h2>)}
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.164 27">
@@ -76,9 +76,9 @@ function Detail(props) {
                     </svg>
                 </div>
 
-                <div className="verstoringview--content">
+                <div className="disruptionview--content">
                     {disruption.timespans[0].period &&
-                        <div className="verstoringview--item">
+                        <div className="disruptionview--item">
                             <h3>Wanneer</h3>
                             <p>{disruption.timespans[0].period}</p>
                         </div>
@@ -86,7 +86,7 @@ function Detail(props) {
 
                     {disruption.timespans[0].additionalTravelTime &&
                         (disruption.timespans[0].additionalTravelTime.maximumDurationInMinutes &&
-                            <div className="verstoringview--item">
+                            <div className="disruptionview--item">
                                 <h3>Extra reistijd</h3>
                                 <p>{disruption.timespans[0].additionalTravelTime.label}</p>
                             </div>
@@ -94,14 +94,14 @@ function Detail(props) {
                     }
 
                     {disruption.timespans[0].situation &&
-                        <div className="verstoringview--item">
+                        <div className="disruptionview--item">
                             <h3>Gevolg</h3>
                             <p>{disruption.timespans[0].situation.label}</p>
                         </div>
                     }
 
                     {disruption.timespans[0].advices[0] &&
-                        <div className="verstoringview--item">
+                        <div className="disruptionview--item">
                             <h3>Advies</h3>
                             <p>{disruption.timespans[0].advices[0]}</p>
                         </div>
