@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-ns-reisplanner/static/css/main.8e10c7bf.css",
-    "main.js": "/react-ns-reisplanner/static/js/main.ba1ed22e.js",
-    "static/media/bg.png": "/react-ns-reisplanner/static/media/bg.6a97489dc3be001ed42e.png",
-    "index.html": "/react-ns-reisplanner/index.html",
-    "static/media/ns-logo.svg": "/react-ns-reisplanner/static/media/ns-logo.a8b44711c964078f5070c17b3196fb30.svg",
-    "main.8e10c7bf.css.map": "/react-ns-reisplanner/static/css/main.8e10c7bf.css.map",
-    "main.ba1ed22e.js.map": "/react-ns-reisplanner/static/js/main.ba1ed22e.js.map"
+    "main.css": "/static/css/main.c7094901.css",
+    "main.js": "/static/js/main.49a008b5.js",
+    "static/media/bg.png": "/static/media/bg.6a97489dc3be001ed42e.png",
+    "static/media/ns-logo.svg": "/static/media/ns-logo.a8b44711c964078f5070c17b3196fb30.svg",
+    "index.html": "/index.html",
+    "main.c7094901.css.map": "/static/css/main.c7094901.css.map",
+    "main.49a008b5.js.map": "/static/js/main.49a008b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e10c7bf.css",
-    "static/js/main.ba1ed22e.js"
+    "static/css/main.c7094901.css",
+    "static/js/main.49a008b5.js"
   ]
 }
