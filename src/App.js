@@ -10,9 +10,11 @@ import Background from "./components/Background/Background";
 import Overview from './components/Disruption/Overview/Overview';
 
 function App() {
+  const routerBaseName = process.env.PUBLIC_URL;
+
   return (
     <div className="app" >
-      <BrowserRouter>
+      <BrowserRouter basename={routerBaseName}>
         <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />
