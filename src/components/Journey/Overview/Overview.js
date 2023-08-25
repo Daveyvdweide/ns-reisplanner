@@ -26,29 +26,29 @@ function Overview(props) {
           setError(error);
         }
       );
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.submittedInputFormData]);
 
   if (error) {
-        return <div className="API-message error--no-margin error">Error: {error.message}</div>;
+    return <div className="API-message error--no-margin error">Error: {error.message}</div>;
   } else if (!isLoaded) {
-        return <div className="API-message error--no-margin">Loading...</div>;
+    return <div className="API-message error--no-margin">Loading...</div>;
   } else {
     return (
       <div className="reizen">
         <div className="reizen--container">
-          {(props.trips !== undefined ? props.trips.map((trip, id) => (
-            <Card
-              key={id}
-              id={id}
-              legs={trip.legs}
-              trip={trip}
-              changeTripView={props.changeTripView}
-            />
+          {(
+            props.trips !== undefined ? props.trips.map((trip, id) => (
+              <Card
+                key={id}
+                id={id}
+                legs={trip.legs}
+                trip={trip}
+                changeTripView={props.changeTripView}
+              />
             ))
-            :
-            <p className="reizen--no-result">Er zijn geen reizen gevonden.</p>
-                    )}
+              :
+              <p className="reizen--no-result">Er zijn geen reizen gevonden.</p>
+          )}
         </div>
       </div>
     );

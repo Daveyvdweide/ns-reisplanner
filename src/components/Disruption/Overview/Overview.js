@@ -98,13 +98,16 @@ function Overview() {
                             advice={item.type !== "CALAMITY" && item.timespans[0].advices[0]}
                             when={item.type !== "CALAMITY" && item.timespans[0].period}
                             handleClick={changeDisruptionPageToView}
-
                         />
                     ))}
                 </div>
-                <Detail item={selectedItem} style={disruptionStyles} handleClick={changeDisruptionPageToList}
+                <Detail 
+                    item={selectedItem} 
+                    style={disruptionStyles} 
+                    handleClick={changeDisruptionPageToList}
                     backButtonStyle={disruptionStyles.disruptionBackButton}
-                    changeDisruptionPageToList={changeDisruptionPageToList} />
+                    changeDisruptionPageToList={changeDisruptionPageToList} 
+                />
             </div>
         );
     }

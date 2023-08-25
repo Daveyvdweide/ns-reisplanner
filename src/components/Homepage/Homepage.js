@@ -90,7 +90,10 @@ function Homepage() {
       </div>
       <div className="homepage--journeyview">
         {tripView !== undefined && (
-          <Detail legs={tripView.legs} tripView={tripView} />
+          <Detail 
+            legs={tripView.legs} 
+            tripView={tripView} 
+          />
         )}
       </div>
     </div>
