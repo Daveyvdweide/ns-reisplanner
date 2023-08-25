@@ -1,6 +1,12 @@
 # NS Reisplanner
 
-Journey planner for the Dutch railnet. 
+Journey planner for the Dutch railnet. https://daveyvdweide.github.io/ns-reisplanner/
+
+## TODO 
+
+- Add animations while waiting for query results
+- Make it possible to easily plan another trip
+- Make mobile friendly
 
 ## Journey planner
 Select start and end stations:
