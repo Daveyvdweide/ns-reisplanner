@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ns-reisplanner/static/css/main.c7094901.css",
-    "main.js": "/ns-reisplanner/static/js/main.26d52029.js",
+    "main.js": "/ns-reisplanner/static/js/main.b8a55ded.js",
     "static/media/bg.png": "/ns-reisplanner/static/media/bg.6a97489dc3be001ed42e.png",
     "index.html": "/ns-reisplanner/index.html",
     "static/media/ns-logo.svg": "/ns-reisplanner/static/media/ns-logo.a8b44711c964078f5070c17b3196fb30.svg",
     "main.c7094901.css.map": "/ns-reisplanner/static/css/main.c7094901.css.map",
-    "main.26d52029.js.map": "/ns-reisplanner/static/js/main.26d52029.js.map"
+    "main.b8a55ded.js.map": "/ns-reisplanner/static/js/main.b8a55ded.js.map"
   },
   "entrypoints": [
     "static/css/main.c7094901.css",
-    "static/js/main.26d52029.js"
+    "static/js/main.b8a55ded.js"
   ]
 }
