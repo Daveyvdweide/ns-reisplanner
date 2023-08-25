@@ -6,6 +6,7 @@ Journey planner for the Dutch railnet. https://daveyvdweide.github.io/ns-reispla
 
 - Add animations while waiting for query results
 - Make it possible to easily plan another trip
+- Refactor code with insights from the past two years (started this project in november 2021)
 - Make mobile friendly
 
 ## Journey planner
