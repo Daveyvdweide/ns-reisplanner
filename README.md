@@ -13,6 +13,7 @@ View disruptions:
 ![image](https://github.com/Daveyvdweide/react-ns-reisplanner/assets/55092870/1f01c4c3-98a0-4e5f-a4a2-5e09e46157b8)
 
 ## Host locally
+
 ### Setup
 Install node modules
 
