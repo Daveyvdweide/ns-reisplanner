@@ -20,7 +20,7 @@ jobs:
         npm install
         npm run-script build
       env:
-        REACT_APP_NS_API_KEY: "test_api_key"
+        REACT_APP_NS_API_KEY: "67e31881f6ac4717bcd3d7aa1b6f92c2"
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
