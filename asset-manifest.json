@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.c7094901.css",
-    "main.js": "/static/js/main.49a008b5.js",
-    "static/media/bg.png": "/static/media/bg.6a97489dc3be001ed42e.png",
-    "static/media/ns-logo.svg": "/static/media/ns-logo.a8b44711c964078f5070c17b3196fb30.svg",
-    "index.html": "/index.html",
-    "main.c7094901.css.map": "/static/css/main.c7094901.css.map",
-    "main.49a008b5.js.map": "/static/js/main.49a008b5.js.map"
+    "main.css": "/daveyvdweide.github.io/ns-reisplanner/static/css/main.c7094901.css",
+    "main.js": "/daveyvdweide.github.io/ns-reisplanner/static/js/main.a5821f13.js",
+    "static/media/bg.png": "/daveyvdweide.github.io/ns-reisplanner/static/media/bg.6a97489dc3be001ed42e.png",
+    "index.html": "/daveyvdweide.github.io/ns-reisplanner/index.html",
+    "static/media/ns-logo.svg": "/daveyvdweide.github.io/ns-reisplanner/static/media/ns-logo.a8b44711c964078f5070c17b3196fb30.svg",
+    "main.c7094901.css.map": "/daveyvdweide.github.io/ns-reisplanner/static/css/main.c7094901.css.map",
+    "main.a5821f13.js.map": "/daveyvdweide.github.io/ns-reisplanner/static/js/main.a5821f13.js.map"
   },
   "entrypoints": [
     "static/css/main.c7094901.css",
-    "static/js/main.49a008b5.js"
+    "static/js/main.a5821f13.js"
   ]
 }
