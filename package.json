@@ -1,7 +1,7 @@
 {
   "name": "2021-dev3-t-spoort-niet",
   "version": "0.1.0",
-  "homepage": "https://daveyvdweide.github.io/ns-reisplanner",
+  "homepage": "https://daveyvdweide.github.io/ns-reisplanner/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.8.2",
